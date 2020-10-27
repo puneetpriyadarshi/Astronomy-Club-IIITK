@@ -84,5 +84,12 @@ nav.black-nav {
     height: 700px;
 }
 
+.hoverd:hover .sub-list{
+    display:block;
+    }
+    
+    .sub-list li a{
+    	color:black;
+    }
 
 /* slide show */
