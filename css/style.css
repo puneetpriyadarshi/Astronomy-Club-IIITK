@@ -83,13 +83,15 @@ nav.black-nav {
 .carousel-item img {
     height: 700px;
 }
+ .sub-list{
+    	display:none;
+    }
+    
 
 .hoverd:hover .sub-list{
     display:block;
     }
     
-    .sub-list li a{
-    	color:black;
-    }
+   
 
 /* slide show */
