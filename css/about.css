@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+.left-content {
+    float: left;
+    width: 70%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+}
+
+#heading {
+    font-size: 59px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.left-content img {
+    float: right;
+    margin-left: 12px;
+    margin-bottom: 12px;
+    width: 260px;
+    height: 220px;
+}
+
+.right-content {
+    text-align: center;
+    float: left;
+}
+
+.sub-content1 {
+    display: block;
+    border: 2px solid black;
+}
+
+.sub-title {
+    background-color: aliceblue;
+}
+
+.container1 ul {
+    list-style: none;
+}
+
+.container1 ul li a {
+    display: block;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.sub-content2 {
+    display: block;
+    border: 2px solid black;
+}
+
+.container2 ul {
+    list-style: none;
+}
+
+.container2 ul li a {
+    display: block;
+    text-align: left;
+    padding-left: 10px;
+}
