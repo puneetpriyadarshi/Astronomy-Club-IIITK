@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>खगोलन्वेषण</title>
+    <title>base</title>
     <!-- <link rel="stylesheet" href="css/about.css"> -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -32,7 +32,7 @@
                 $('.small').addClass('change-small');
                 $('.list-item-top a').addClass('decr-pad');
                 $('.sub-list-top').addClass('change-sub');
-                $('.sub-list-top li a').addClass('change-sub-sub');
+                $('.nav-sub-menu').addClass('change-sublist');
 
 
             } else {
@@ -43,7 +43,7 @@
                 $('.small').removeClass('change-small');
                 $('.list-item-top a').removeClass('decr-pad');
                 $('.sub-list-top').removeClass('change-sub');
-                $('.sub-list-top li a').removeClass('change-sub-sub');
+                $('.nav-sub-menu').removeClass('change-sublist');
 
             }
         })
@@ -132,7 +132,7 @@
             list-style: none;
         }
         
-        .list-item-top a {
+        .list-item-top>a {
             text-decoration: none;
             color: white;
             font-size: 20px;
@@ -146,7 +146,7 @@
             margin-top: -12px;
         }
         
-        .list-item-top a:hover {
+        .list-item-top>a:hover {
             color: lightblue;
             text-decoration: none;
         }
@@ -163,34 +163,44 @@
         .change-sub {
             background-color: white;
             border-left: 4px solid #012D5C;
-            margin-top: 28.5px;
+            margin-top: 21px;
         }
         
         .list-item-top:hover .sub-list-top {
             display: block;
         }
-        
-        .sub-list-top li a {
-            color: white;
-            /* border-bottom: 1px solid cornflowerblue; */
-            text-align: left;
-            /* padding-bottom: 10px; */
-        }
-        
-        .change-sub-sub {
+        /* .sub-list-top li a {
             border-bottom: 1px solid cornflowerblue;
+            text-align: left;
             padding-bottom: 10px;
-            padding-top: 0;
-            color: black;
+        } */
+        
+        .nav-sub-menu {
+            color: white;
+            text-align: left;
+            font-size: 20px;
+            font-weight: bold;
         }
         
-        .sub-list-top li a:hover {
+        .change-sublist {
+            color: black;
+            border-bottom: 1px solid cornflowerblue;
+            text-align: center;
+            padding-bottom: 10px;
+            display: block;
+            padding-top: 12px;
+            margin-top: -5px;
+        }
+        
+        .nav-sub-menu:hover {
             color: lightblue;
+            text-decoration: none;
             /* background-color: cornflowerblue; */
         }
         
-        .change-sub-sub:hover {
+        .change-sublist:hover {
             color: white;
+            text-decoration: none;
             background-color: cornflowerblue;
         }
         
@@ -234,7 +244,7 @@
         }
         
         .logo-foot a:hover {
-            color: white;
+            /* color: white; */
             text-decoration: none;
         }
         
@@ -246,6 +256,10 @@
         
         .eng-foot {
             font-size: 24px;
+        }
+        
+        .address-foot:hover {
+            color: lightblue;
         }
         /* 2 */
         
@@ -269,12 +283,14 @@
         }
         
         .link-foot ul li a {
+            font-weight: bold;
             text-decoration: none;
-            font-size: 20px;
-            /* padding-left: 3px; */
+            font-size: 14px;
+            padding-right: 21px;
             color: white;
             display: block;
-            padding-bottom: 1px;
+            padding-bottom: 6px;
+            text-transform: uppercase;
         }
         
         .link-foot ul li a:hover {
@@ -302,12 +318,14 @@
         }
         
         .update-foot ul li a {
+            font-weight: bold;
             text-decoration: none;
-            font-size: 20px;
-            /* padding-left: 3px; */
+            font-size: 14px;
+            padding-right: 21px;
             color: white;
             display: block;
-            padding-bottom: 1px;
+            padding-bottom: 6px;
+            text-transform: uppercase;
         }
         
         .update-foot ul li a:hover {
@@ -334,7 +352,7 @@
             list-style: none;
         }
         
-        .contact-foot ul li a {
+        .foot-cont-link {
             text-decoration: none;
             font-size: 20px;
             /* padding-left: 3px; */
@@ -343,9 +361,13 @@
             padding-bottom: 2px;
         }
         
-        .contact-foot ul li a:hover {
-            color: lightblue;
+        .foot-cont-link:hover {
+            color: white;
+            text-decoration: none;
         }
+        /* .contact-foot ul li a:hover {
+            color: lightblue;
+        } */
         
         .contact-foot>a i {
             padding-top: 10px;
@@ -490,17 +512,18 @@
             <li class="list-item-top"><a href="#">ACTIVITIES</a>
 
                 <ul class="sub-list-top">
-                    <li><a class="" href="webinar.html">Webinars</a></li>
-                    <li><a class="" href="openday.html">Open day</a></li>
+                    <li><a class="nav-sub-menu" href="webinar.html">Webinars</a></li>
+                    <li><a class="nav-sub-menu" href="openday.html">Open day</a></li>
+                    <!-- <li><a class="nav-sub-menu" href="seminar.html">Seminars</a></li> -->
                 </ul>
 
 
             </li>
             <li class="list-item-top"><a href="#">STUDENT BLOGS</a>
                 <ul class="sub-list-top">
-                    <li><a class="" href="#">ARTICLES</a></li>
-                    <li><a class="" href="#">PROJECTS</a></li>
-                    <li><a class="" href="presentation.html">PRESENTATIONS</a></li>
+                    <!-- <li><a href="#" class="nav-sub-menu">ARTICLES</a></li>
+                    <li><a href="#" class="nav-sub-menu">PROJECTS</a></li> -->
+                    <li><a href="presentation.html" class="nav-sub-menu">PRESENTATIONS</a></li>
                 </ul>
             </li>
             <li class="list-item-top"><a href="members.html">MEMBERS</a></li>
@@ -560,13 +583,13 @@
             <a href="webinar 1.html"><i class="far fa-hand-point-right"></i> Webinar on  “2020 NOBEL LAUREATES IN PHYSICS AND THEIR DISCOVERIES IN BLACK HOLES” by Dr. Arun Mangalam</a>
             <a href="webinar 2.html"><i class="far fa-hand-point-right"></i> Webinar on “SPACE SCIENCE TECHNOLOGY AND ITS APPLICATIONS” by Dr.Krishnamurthy</a>
             <a href="webinar 3.html"><i class="far fa-hand-point-right"></i> Webinar on “LITHIUM IN STARS” by Prof. B Eswara Reddy</a>
-            <a href="webinar 4.html"><i class="far fa-hand-point-right"></i> Seminar on “THE NATURE OF DISCOVERY IN PHYSICS” by Prof. SVM SatyaNarayana </a>
+            <a href="webinar 4.html"><i class="far fa-hand-point-right"></i> THE NATURE OF DISCOVERY IN PHYSICS” by Prof. SVM SatyaNarayana </a>
 
         </div>
         <div class="upcoming-events-main">
-            <div class="heading-main">Upcoming Events</div>
-            <a href=""><i class="far fa-hand-point-right"></i> Webinar on “BHASKARA AND LEELAVATI” by Prof.Jayant V Narlilkar</a>
-            <a href=""><i class="far fa-hand-point-right"></i> The First Online painting exhibition by Renowned Madhubani artist Mrs. Shalinee Kumari</a>
+            <div class="heading-main">Future Events</div>
+            <a href="pdf/event 1.pdf"><i class="far fa-hand-point-right"></i> Webinar on “BHASKARA AND LEELAVATI” by Prof.Jayant V Narlilkar</a>
+            <a href="pdf/event2.pdf"><i class="far fa-hand-point-right"></i> The First Online painting exhibition by Renowned Madhubani artist Mrs. Shalinee Kumari</a>
 
 
         </div>
@@ -580,18 +603,18 @@
             <img src="images/logo.jpg" alt="">
             <a class="hindi-foot">खगोलन्वेषण</a>
             <a class="eng-foot">Astronomy Club of IIITDMK</a>
-            <a class="address-foot">Jagannathagattu Hill, Kurnool- 518 007, Andhra Pradesh, India. <i
+            <a href="https://www.google.com/maps/search/iiitdm+kurnool/@15.7604582,78.0361571,18.03z" class="address-foot">Jagannathagattu Hill, Kurnool- 518 007, Andhra Pradesh, India. <i
                     class="fa fa-map-marker"></i></a>
         </div>
 
         <div class="link-foot">
             <p>Quick Links</p>
             <ul>
-                <li><a href="#"><i class="far fa-hand-point-right"></i> Link 1</a></li>
-                <li><a href="#"><i class="far fa-hand-point-right"></i> Link 2</a></li>
-                <li><a href="#"><i class="far fa-hand-point-right"></i> Link 3</a></li>
-                <li><a href="#"><i class="far fa-hand-point-right"></i> Link 4</a></li>
-                <li><a href="#"><i class="far fa-hand-point-right"></i> Link 5</a></li>
+                <li><a href="webinar 1.html"><i class="far fa-hand-point-right"></i> 2020 NOBEL LAUREATES IN PHYSICS AND THEIR DISCOVERIES IN BLACK HOLES</a></li>
+                <li><a href="webinar 2.html"><i class="far fa-hand-point-right"></i> SPACE SCIENCE TECHNOLOGY AND ITS APPLICATIONS</a></li>
+                <li><a href="webinar 3.html"><i class="far fa-hand-point-right"></i> LITHIUM IN STARS</a></li>
+                <li><a href="webinar 4.html"><i class="far fa-hand-point-right"></i> THE NATURE OF DISCOVERY IN PHYSICS</a></li>
+                <!-- <li><a href="#"><i class="far fa-hand-point-right"></i> Link 5</a></li> -->
 
             </ul>
         </div>
@@ -599,11 +622,11 @@
         <div class="update-foot">
             <p>Updates</p>
             <ul>
-                <li><a href="#"><i class="far fa-hand-point-right"></i> Update 1</a></li>
-                <li><a href="#"><i class="far fa-hand-point-right"></i> Update 2</a></li>
-                <li><a href="#"><i class="far fa-hand-point-right"></i> Update 3</a></li>
+                <li><a href="pdf/event 1.pdf" target="_blank"><i class="far fa-hand-point-right"></i> BHASKARA AND LEELAVATI</a></li>
+                <li><a href="pdf/event2.pdf" target="_blank"><i class="far fa-hand-point-right"></i> The First Online painting exhibition by Renowned Madhubani artist Mrs. Shalinee Kumari</a></li>
+                <!-- <li><a href="#"><i class="far fa-hand-point-right"></i> Update 3</a></li>
                 <li><a href="#"><i class="far fa-hand-point-right"></i> Update 4</a></li>
-                <li><a href="#"><i class="far fa-hand-point-right"></i> Update 5</a></li>
+                <li><a href="#"><i class="far fa-hand-point-right"></i> Update 5</a></li> -->
 
             </ul>
         </div>
@@ -613,14 +636,14 @@
             <p>Contact Us</p>
 
             <ul>
-                <li><a href=""><i class="fas fa-phone-alt"></i> 08518-289101</a></li>
-                <li><a href=""><i class="far fa-envelope"></i> astronomy@iiitk.ac.in</a></li>
+                <li><a class="foot-cont-link"><i class="fas fa-phone-alt"></i> 08518-289101</a></li>
+                <li><a class="foot-cont-link"><i class="far fa-envelope"></i> astronomy@iiitk.ac.in</a></li>
             </ul>
             <p>Follow Us</p>
 
-            <a href=""><i class="fab fa-youtube"></i></a>
-            <a href=""><i class="fab fa-facebook"></i></a>
-            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCiBoirFPDnHAOyoujuWyMuQ"><i class="fab fa-youtube"></i></a>
+            <!-- <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a> -->
 
 
         </div>
