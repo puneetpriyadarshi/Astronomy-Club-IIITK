@@ -23,67 +23,78 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style type="text/css">
-        body{
+        body {
             margin: 0px;
-            padding:0px;
+            padding: 0px;
             background-image: url("images/contact-us/pexels-photo-848573.jpeg");
             background-size: cover;
         }
-        .email{
+        
+        .email {
             font-size: 25px;
             padding-top: 50px;
         }
-        .facebook{
+        
+        .facebook {
             font-size: 25px;
         }
-        a:hover{
+        
+        a:hover {
             text-decoration: none;
-            color:violet;
+            color: violet;
             text-shadow: violet;
         }
-        .gmail-logo{
-            width:2.5%;
-            height:5%;
+        
+        .gmail-logo {
+            width: 2.5%;
+            height: 5%;
             margin-right: 20px;
             border-radius: 10px;
         }
-        .fb-logo{
-            width:2.5%;
-            height:5%;
+        
+        .fb-logo {
+            width: 2.5%;
+            height: 5%;
             margin-right: 20px;
             border-radius: 10px;
         }
-        .insta-logo{
-            width:2.5%;
-            height:5%;
-            margin-right: 20px;
-            margin-top: 5px;
-            border-radius: 10px;
-        }
-        .instagram{
-            font-size: 25px;
-        }
-        .youtube-logo{
-            width:2.5%;
-            height:5%;
+        
+        .insta-logo {
+            width: 2.5%;
+            height: 5%;
             margin-right: 20px;
             margin-top: 5px;
             border-radius: 10px;
         }
-        .youtube{
+        
+        .instagram {
             font-size: 25px;
-            
         }
-        .iiitk-logo{
+        
+        .youtube-logo {
+            width: 2.5%;
+            height: 5%;
+            margin-right: 20px;
+            margin-top: 5px;
+            border-radius: 10px;
+        }
+        
+        .youtube {
+            font-size: 25px;
+        }
+        
+        .iiitk-logo {
             float: left;
             margin-right: 100px;
             margin-top: 10px;
         }
-        .align-left{
-           position: relative;
-           left:50px;
+        
+        .align-left {
+            position: relative;
+            left: 50px;
         }
-        .map{
+        
+        .map {
             float: right;
             height: 85%;
             width: 50%;
@@ -92,83 +103,151 @@
             left: -50px;
             border-radius: 10px;
         }
-        .card-container{
-      width: 100%;
-      height: auto;
-      margin: auto 0;
-      display: flex;
-      justify-content: center;
+        
+        .card-container {
+            width: 100%;
+            height: auto;
+            margin: auto 0;
+            display: flex;
+            justify-content: center;
         }
-         /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-    .flip-card {
-      background-color: transparent;
-      width: 20%;
-      height: 400px;
-      border: 1px solid #f1f1f1;
-      perspective: 1000px; /* Remove this if you don't want the 3D effect */
-      text-align: center;
-      margin: 50px;
-    }
-    
-    /* This container is needed to position the front and back side */
-    .flip-card-inner {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      transition: transform 0.8s;
-      transform-style: preserve-3d;
-    }
-    
-    /* Do an horizontal flip when you move the mouse over the flip box container */
-    .flip-card:hover .flip-card-inner {
-      transform: rotateY(180deg);
-    }
-    
-    /* Position the front and back side */
-    .flip-card-front, .flip-card-back {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      -webkit-backface-visibility: hidden; /* Safari */
-      backface-visibility: hidden;
-    }
-    
-    /* Style the front side (fallback if image is missing) */
-    .flip-card-front {
-      background-color: #bbb;
-      color: black;
-    }
-    
-    /* Style the back side */
-    .flip-card-back {
-      background-image: url("images/contact-us/flip-cover.jpg");
-      color: white;
-      transform: rotateY(180deg);
-    } 
-    .creator{
-        width: 35%;
-        height:50px;
-        margin: auto;
-        margin-top: 30px;
-        margin-bottom: 20px;
-        text-align: center;
-        color:white;
-    }
-    .creators{
-        font-size: 40px;
-        font-weight: bolder;
-        font-style: italic;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-    }
-        </style>
+        
+        .card-container-1 {
+            width: 100%;
+            height: auto;
+            margin: auto 0;
+            display: flex;
+            justify-content: center;
+        }
+        /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+        
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 400px;
+            border: 1px solid #f1f1f1;
+            perspective: 1000px;
+            /* Remove this if you don't want the 3D effect */
+            text-align: center;
+            margin: 50px;
+        }
+        /* This container is needed to position the front and back side */
+        
+        .flip-card-inner {
+            position: relative;
+            width: 300px;
+            height: 400px;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+        /* Do an horizontal flip when you move the mouse over the flip box container */
+        
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+        /* Position the front and back side */
+        
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 300px;
+            height: 400px;
+            -webkit-backface-visibility: hidden;
+            /* Safari */
+            backface-visibility: hidden;
+        }
+        /* Style the front side (fallback if image is missing) */
+        
+        .flip-card-front {
+            background-color: #bbb;
+            color: black;
+        }
+        /* Style the back side */
+        
+        .flip-card-back {
+            background-image: url("images/contact-us/flip-cover.jpg");
+            color: white;
+            transform: rotateY(180deg);
+        }
+        
+        .creator {
+            width: 800px;
+            height: 50px;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: white;
+        }
+        
+        .creators {
+            font-size: 40px;
+            font-weight: bolder;
+            font-style: italic;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        @media only screen and (max-width: 1200px) {
+            /* .creators {
+                margin-top: -60px;
+            } */
+        }
+        
+        @media only screen and (max-width: 840px) {
+            .card-container {
+                display: none;
+            }
+            .creators {
+                font-size: 48px;
+                margin-top: 1px;
+                font-weight: initial;
+            }
+            .card-container-1 {
+                margin-top: -36px;
+            }
+            .flip-card {
+                background-color: transparent;
+                width: 400px;
+                height: 500px;
+                border: 1px solid #f1f1f1;
+                perspective: 1000px;
+                /* Remove this if you don't want the 3D effect */
+                text-align: center;
+                margin: 50px;
+            }
+            .flip-card-inner {
+                position: relative;
+                width: 400px;
+                height: 500px;
+                text-align: center;
+                transition: transform 0.8s;
+                transform-style: preserve-3d;
+            }
+            .flip-card-front,
+            .flip-card-back {
+                position: absolute;
+                width: 400px;
+                height: 500px;
+                -webkit-backface-visibility: hidden;
+                /* Safari */
+                backface-visibility: hidden;
+            }
+        }
+        
+        @media only screen and (min-width: 841px) {
+            .card-container-1 {
+                display: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
 
 
-   <nav class="navbar-top">
+    <nav class="navbar-top">
 
         <div class="logo-top">
             <img src="images/logo.jpg" alt="logo">
@@ -200,122 +279,268 @@
 
         </ul>
 
+        <nav-resp>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a class="list-item-top-resp"><img class="logo-top-resp" src="images/logo.jpg" alt="logo"></a>
+                <a class="large-nav-resp">खगोलन्वेषण</a>
+                <a class="small-nav-resp">Astronomy Club of IIITDM Kurnool</a>
+                <a class="list-item-top-resp" href="index.html">HOME</a>
+                <a class="list-item-top-resp" href="#">ACTIVITIES</a>
+                <div class="sub-list-top-resp">
+                    <a href="webinar.html">WEBINAR</a>
+                    <a href="openday.html">OPEN DAY</a>
+                </div>
+                <a class="list-item-top-resp" href="#">STUDENT BLOGS</a>
+                <div class="sub-list-top-resp">
+                    <a href="presentation.html">PRESENTATION</a>
+                </div>
+                <a class="list-item-top-resp" href="members.html">MEMBERS</a>
+                <a class="list-item-top-resp" href="gallery.html">GALLERY</a>
+                <a class="list-item-top-resp" href="contact-us.html">CONTACT US</a>
+            </div>
+
+
+            <span style="padding-left:95%;padding-top: 10px; font-size:30px;cursor:pointer;color:white;display: block;background-color: rgb(90, 90, 192);" onclick="openNav()">&#9776;</span>
+
+            <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "70%";
+                }
+
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+            </script>
+
+        </nav-resp>
+
     </nav>
 
-    <nav-resp>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a class="list-item-top-resp"><img class="logo-top-resp" src="images/logo.jpg" alt="logo"></a>
-            <a class="large-nav-resp">खगोलन्वेषण</a>
-            <a class="small-nav-resp">Astronomy Club of IIITDM Kurnool</a>
-            <a class="list-item-top-resp" href="index.html">HOME</a>
-            <a class="list-item-top-resp" href="#">ACTIVITIES</a>
-            <div class="sub-list-top-resp">
-                <a href="webinar.html">WEBINAR</a>
-                <a href="openday.html">OPEN DAY</a>
-            </div>
-            <a class="list-item-top-resp" href="#">STUDENT BLOGS</a>
-            <div class="sub-list-top-resp">
-                <a href="presentation.html">PRESENTATION</a>
-            </div>
-            <a class="list-item-top-resp" href="members.html">MEMBERS</a>
-            <a class="list-item-top-resp" href="gallery.html">GALLERY</a>
-            <a class="list-item-top-resp" href="contact-us.html">CONTACT US</a>
-        </div>
 
 
-        <span style="padding-left: 10px;font-size:30px;cursor:pointer;color:white;display: block;background-color: rgb(90, 90, 192);" onclick="openNav()">&#9776;<div class="hindi-resp">खगोलन्वेषण</div> <div class="top-nav-img-resp"><img style="width: 36px;border-radius: 50%;margin-bottom: 2px;" src="images/logo.jpg" alt="logo"></div> <div class="eng-resp">Astronomy Club of IIITDM</div></span>
 
-        <script>
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "70%";
-            }
-
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-            }
-        </script>
-
-    </nav-resp>
-    
-    
 
     <main>
-        <div class="creator"><p class="creators">WEBSITE CREATORS</p></div>
         <div class="card-container">
-        <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="images/contact-us/puneet.jpg" style="width:100%;height:100%;">
-              </div>
-              <div class="flip-card-back">
-                <p class="name"><b>NAME : </b>PUNEET PRIYADARSHI</p>
-                <p><b>A CREATOR AND AN ENGINEER</b></p>
-                <p><u><b>SOCIAL MEDIA LINKS</b></u></p>
-                <a href="https://www.linkedin.com/in/puneet-priyadarshi-a4a624167" target="blank"><p><b>LINKEDIN</b></p></a>
-                <a href="https://github.com/puneetpriyadarshi" target="blank"><p><b>GITHUB</b></p></a>
-                <a href="https://www.instagram.com/social____vegan/" target="blank"><p><b>INSTAGRAM</b></p></a>
-                <a href="https://www.facebook.com/profile.php?id=100010659871446" target="blank"><p><b>FACEBOOK</b></p></a>
-                <p><b>EMAIL:</b>119me0006@iiitk.ac.in</p>
-              </div>
+            <div class="creator">
+                <p class="creators">WEBSITE CREATORS</p>
             </div>
-          </div> 
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="images/contact-us/pratik.jpg" style="width:100%;height:100%;">
-              </div>
-              <div class="flip-card-back">
-                <p class="name"><b>NAME : </b>PRATIK KUMAR</p>
-                <p><b>A CREATOR AND AN ENGINEER</b></p>
-                <p><u><b>SOCIAL MEDIA LINKS</b></u></p>
-                <a href="https://www.linkedin.com/in/pratik-kumar-40a9771b5/" target="blank"><p><b>LINKEDIN</b></p></a>
-                <a href="https://github.com/Pratik-Kumar-621" target="blank"><p><b>GITHUB</b></p></a>
-                <a href="https://www.instagram.com/ek_i_jada_ho_gaya_guru/" target="blank"><p><b>INSTAGRAM</b></p></a>
-                <a href="https://www.facebook.com/pratik.anna.7/" target="blank"><p><b>FACEBOOK</b></p></a>
-                <p><b>EMAIL:</b>119cs0030@iiitk.ac.in</p>
-              </div>
-            </div>
-          </div> 
-          </div>
-          <div class="creator"><p class="creators">CONTENT CREATORS</p></div>
-          <div class="card-container">
+        </div>
+        <div class="card-container">
             <div class="flip-card">
                 <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <img src="images/contact-us/IMG-20201031-WA0017.jpg" style="width:100%;height:100%;">
-                  </div>
-                  <div class="flip-card-back">
-                    <p class="name"><b>NAME : </b>PRAVALLIKA SALADI</p>
-                    <p><b>A CREATOR AND AN ENGINEER</b></p>
-                    <p><u><b>SOCIAL MEDIA LINKS</b></u></p>
-                    <a href="https://www.linkedin.com/in/pravallika-saladi-279a18196" target="blank"><p><b>LINKEDIN</b></p></a>
-                    <a href="https://github.com/Pravallika-Saladi" target="blank"><p><b>GITHUB</b></p></a>
-                    <a href="https://instagram.com/luna_saladi?r=nametag" target="blank"><p><b>INSTAGRAM</b></p></a>
-                    <p><b>EMAIL:</b>119ec0013@iiitk.ac.in</p>
-                  </div>
+                    <div class="flip-card-front">
+                        <img src="images/contact-us/puneet.jpg" style="width:100%;height:100%;">
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="name"><b>NAME : </b>PUNEET PRIYADARSHI</p>
+                        <p><b>A CREATOR AND AN ENGINEER</b></p>
+                        <p><u><b>SOCIAL MEDIA LINKS</b></u></p>
+                        <a href="https://www.linkedin.com/in/puneet-priyadarshi-a4a624167" target="blank">
+                            <p><b>LINKEDIN</b></p>
+                        </a>
+                        <a href="https://github.com/puneetpriyadarshi" target="blank">
+                            <p><b>GITHUB</b></p>
+                        </a>
+                        <a href="https://www.instagram.com/social____vegan/" target="blank">
+                            <p><b>INSTAGRAM</b></p>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100010659871446" target="blank">
+                            <p><b>FACEBOOK</b></p>
+                        </a>
+                        <p><b>EMAIL:</b>119me0006@iiitk.ac.in</p>
+                    </div>
                 </div>
-              </div> 
-              <div class="flip-card">
+            </div>
+            <div class="flip-card">
                 <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <img src="images/contact-us/20200607_221912.jpg" style="width:100%;height:100%;">
-                  </div>
-                  <div class="flip-card-back">
-                    <p class="name"><b>NAME : </b>VIRAJITHA KODIDASU</p>
-                    <p><b>A CREATOR AND AN ENGINEER</b></p>
-                    <p><u><b>SOCIAL MEDIA LINKS</b></u></p>
-                    <a href="https://www.linkedin.com/mwlite/in/virajitha-kodidasu-321150197" target="blank"><p><b>LINKEDIN</b></p></a>
-                    <a href="https://instagram.com/virajithakodidasu?igshid=ld3791zx85zt" target="blank"><p><b>INSTAGRAM</b></p></a>
-                    <p><b>EMAIL:</b>119me0010@iiitk.ac.in</p>
-                  </div>
+                    <div class="flip-card-front">
+                        <img src="images/contact-us/pratik.jpg" style="width:100%;height:100%;">
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="name"><b>NAME : </b>PRATIK KUMAR</p>
+                        <p><b>A CREATOR AND AN ENGINEER</b></p>
+                        <p><u><b>SOCIAL MEDIA LINKS</b></u></p>
+                        <a href="https://www.linkedin.com/in/pratik-kumar-40a9771b5/" target="blank">
+                            <p><b>LINKEDIN</b></p>
+                        </a>
+                        <a href="https://github.com/Pratik-Kumar-621" target="blank">
+                            <p><b>GITHUB</b></p>
+                        </a>
+                        <a href="https://www.instagram.com/ek_i_jada_ho_gaya_guru/" target="blank">
+                            <p><b>INSTAGRAM</b></p>
+                        </a>
+                        <a href="https://www.facebook.com/pratik.anna.7/" target="blank">
+                            <p><b>FACEBOOK</b></p>
+                        </a>
+                        <p><b>EMAIL:</b>119cs0030@iiitk.ac.in</p>
+                    </div>
                 </div>
-              </div> 
-              </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="creator">
+                <p class="creators">CONTENT CREATORS</p>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/contact-us/IMG-20201031-WA0017.jpg" style="width:100%;height:100%;">
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="name"><b>NAME : </b>PRAVALLIKA SALADI</p>
+                        <p><b>A CREATOR AND AN ENGINEER</b></p>
+                        <p><u><b>SOCIAL MEDIA LINKS</b></u></p>
+                        <a href="https://www.linkedin.com/in/pravallika-saladi-279a18196" target="blank">
+                            <p><b>LINKEDIN</b></p>
+                        </a>
+                        <a href="https://github.com/Pravallika-Saladi" target="blank">
+                            <p><b>GITHUB</b></p>
+                        </a>
+                        <a href="https://instagram.com/luna_saladi?r=nametag" target="blank">
+                            <p><b>INSTAGRAM</b></p>
+                        </a>
+                        <p><b>EMAIL:</b>119ec0013@iiitk.ac.in</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/contact-us/20200607_221912.jpg" style="width:100%;height:100%;">
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="name"><b>NAME : </b>VIRAJITHA KODIDASU</p>
+                        <p><b>A CREATOR AND AN ENGINEER</b></p>
+                        <p><u><b>SOCIAL MEDIA LINKS</b></u></p>
+                        <a href="https://www.linkedin.com/mwlite/in/virajitha-kodidasu-321150197" target="blank">
+                            <p><b>LINKEDIN</b></p>
+                        </a>
+                        <a href="https://instagram.com/virajithakodidasu?igshid=ld3791zx85zt" target="blank">
+                            <p><b>INSTAGRAM</b></p>
+                        </a>
+                        <p><b>EMAIL:</b>119me0010@iiitk.ac.in</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="card-container-1">
+            <div class="creator">
+                <p class="creators">WEBSITE CREATORS</p>
+            </div>
+        </div>
+        <div class="card-container-1">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/contact-us/puneet.jpg" style="width:100%;height:100%;">
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="name"><b>NAME : </b>PUNEET PRIYADARSHI</p>
+                        <p><b>A CREATOR AND AN ENGINEER</b></p>
+                        <p><u><b>SOCIAL MEDIA LINKS</b></u></p>
+                        <a href="https://www.linkedin.com/in/puneet-priyadarshi-a4a624167" target="blank">
+                            <p><b>LINKEDIN</b></p>
+                        </a>
+                        <a href="https://github.com/puneetpriyadarshi" target="blank">
+                            <p><b>GITHUB</b></p>
+                        </a>
+                        <a href="https://www.instagram.com/social____vegan/" target="blank">
+                            <p><b>INSTAGRAM</b></p>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100010659871446" target="blank">
+                            <p><b>FACEBOOK</b></p>
+                        </a>
+                        <p><b>EMAIL:</b>119me0006@iiitk.ac.in</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-container-1">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/contact-us/pratik.jpg" style="width:100%;height:100%;">
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="name"><b>NAME : </b>PRATIK KUMAR</p>
+                        <p><b>A CREATOR AND AN ENGINEER</b></p>
+                        <p><u><b>SOCIAL MEDIA LINKS</b></u></p>
+                        <a href="https://www.linkedin.com/in/pratik-kumar-40a9771b5/" target="blank">
+                            <p><b>LINKEDIN</b></p>
+                        </a>
+                        <a href="https://github.com/Pratik-Kumar-621" target="blank">
+                            <p><b>GITHUB</b></p>
+                        </a>
+                        <a href="https://www.instagram.com/ek_i_jada_ho_gaya_guru/" target="blank">
+                            <p><b>INSTAGRAM</b></p>
+                        </a>
+                        <a href="https://www.facebook.com/pratik.anna.7/" target="blank">
+                            <p><b>FACEBOOK</b></p>
+                        </a>
+                        <p><b>EMAIL:</b>119cs0030@iiitk.ac.in</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-container-1">
+            <div class="creator">
+                <p class="creators">CONTENT CREATORS</p>
+            </div>
+        </div>
+        <div class="card-container-1">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/contact-us/IMG-20201031-WA0017.jpg" style="width:100%;height:100%;">
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="name"><b>NAME : </b>PRAVALLIKA SALADI</p>
+                        <p><b>A CREATOR AND AN ENGINEER</b></p>
+                        <p><u><b>SOCIAL MEDIA LINKS</b></u></p>
+                        <a href="https://www.linkedin.com/in/pravallika-saladi-279a18196" target="blank">
+                            <p><b>LINKEDIN</b></p>
+                        </a>
+                        <a href="https://github.com/Pravallika-Saladi" target="blank">
+                            <p><b>GITHUB</b></p>
+                        </a>
+                        <a href="https://instagram.com/luna_saladi?r=nametag" target="blank">
+                            <p><b>INSTAGRAM</b></p>
+                        </a>
+                        <p><b>EMAIL:</b>119ec0013@iiitk.ac.in</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-container-1">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/contact-us/20200607_221912.jpg" style="width:100%;height:100%;">
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="name"><b>NAME : </b>VIRAJITHA KODIDASU</p>
+                        <p><b>A CREATOR AND AN ENGINEER</b></p>
+                        <p><u><b>SOCIAL MEDIA LINKS</b></u></p>
+                        <a href="https://www.linkedin.com/mwlite/in/virajitha-kodidasu-321150197" target="blank">
+                            <p><b>LINKEDIN</b></p>
+                        </a>
+                        <a href="https://instagram.com/virajithakodidasu?igshid=ld3791zx85zt" target="blank">
+                            <p><b>INSTAGRAM</b></p>
+                        </a>
+                        <p><b>EMAIL:</b>119me0010@iiitk.ac.in</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
 
-   <footer>
+    <footer>
 
         <div class="logo-foot">
             <img src="images/logo.jpg" alt="">
