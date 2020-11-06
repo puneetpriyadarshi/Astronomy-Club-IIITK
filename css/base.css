@@ -101,7 +101,7 @@
     
     footer div {
         padding-top: 10px;
-        height: 280px;
+        height: 265px;
         background-color: #002C46;
     }
     /* 1 */
@@ -138,8 +138,20 @@ margin-right: 4%; */
         padding-top: 7px;
     }
     
+    .hindi-foot:hover {
+        color: white;
+    }
+    
+    .eng-foot:hover {
+        color: white;
+    }
+    
     .eng-foot {
         font-size: 24px;
+    }
+    
+    .address-foot {
+        font-size: 14px;
     }
     
     .address-foot:hover {
@@ -272,8 +284,8 @@ margin-right: 4%; */
         display: none;
     }
     
-    @media only screen and (max-width:1200px) {
-        .navbar-top {
+    @media only screen and (max-width:1230px) {
+        .nav-list-top {
             display: none;
         }
         nav-resp {
@@ -291,6 +303,7 @@ margin-right: 4%; */
             overflow-x: hidden;
             transition: 0.5s;
             padding-top: 60px;
+            box-shadow: 0 3.9px 3.6px rgba(0, 0, 0, 0.13), 0 10.8px 10px rgba(0, 0, 0, 0.085), 0 25.9px 24.1px rgba(0, 0, 0, 0.065), 0 86px 80px rgba(0, 0, 0, 0.045);
         }
         .logo-top-resp {
             width: 121px;
@@ -382,10 +395,43 @@ margin-right: 4%; */
         .top-nav-img-resp {
             display: inline;
         }
-        .eng-resp {
+        /* .eng-resp {
             display: inline-block;
             font-size: 21px;
             font-weight: bold;
             padding-bottom: 9px;
+        } */
+        footer div {
+            height: 280px;
+        }
+    }
+    
+    @media only screen and (max-width:1320px) {
+        .update-foot {
+            display: none;
+        }
+        .logo-foot {
+            width: 39%;
+        }
+        .link-foot {
+            width: 33%;
+        }
+        .contact-foot {
+            width: 28%;
+        }
+    }
+    
+    @media only screen and (max-width:900px) {
+        .update-foot {
+            display: none;
+        }
+        .logo-foot {
+            width: 70%;
+        }
+        .link-foot {
+            display: none;
+        }
+        .contact-foot {
+            width: 30%;
         }
     }
