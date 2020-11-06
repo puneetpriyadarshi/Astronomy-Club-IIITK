@@ -110,7 +110,7 @@
         float: left;
         width: 33%;
         /* margin-left: 2%;
-        margin-right: 4%; */
+margin-right: 4%; */
     }
     
     .logo-foot img {
@@ -128,7 +128,7 @@
     }
     
     .logo-foot a:hover {
-        color: white;
+        /* color: white; */
         text-decoration: none;
     }
     
@@ -140,6 +140,10 @@
     
     .eng-foot {
         font-size: 24px;
+    }
+    
+    .address-foot:hover {
+        color: lightblue;
     }
     /* 2 */
     
@@ -163,12 +167,14 @@
     }
     
     .link-foot ul li a {
+        font-weight: bold;
         text-decoration: none;
-        font-size: 20px;
-        /* padding-left: 3px; */
+        font-size: 14px;
+        padding-right: 21px;
         color: white;
         display: block;
-        padding-bottom: 1px;
+        padding-bottom: 6px;
+        text-transform: uppercase;
     }
     
     .link-foot ul li a:hover {
@@ -196,12 +202,14 @@
     }
     
     .update-foot ul li a {
+        font-weight: bold;
         text-decoration: none;
-        font-size: 20px;
-        /* padding-left: 3px; */
+        font-size: 14px;
+        padding-right: 21px;
         color: white;
         display: block;
-        padding-bottom: 1px;
+        padding-bottom: 6px;
+        text-transform: uppercase;
     }
     
     .update-foot ul li a:hover {
@@ -228,7 +236,7 @@
         list-style: none;
     }
     
-    .contact-foot ul li a {
+    .foot-cont-link {
         text-decoration: none;
         font-size: 20px;
         /* padding-left: 3px; */
@@ -237,9 +245,13 @@
         padding-bottom: 2px;
     }
     
-    .contact-foot ul li a:hover {
-        color: lightblue;
+    .foot-cont-link:hover {
+        color: white;
+        text-decoration: none;
     }
+    /* .contact-foot ul li a:hover {
+        color: lightblue;
+    } */
     
     .contact-foot>a i {
         padding-top: 10px;
@@ -250,4 +262,130 @@
     
     .contact-foot>a i:hover {
         color: lightblue;
+    }
+    
+    .sidenav {
+        display: none;
+    }
+    
+    nav-resp {
+        display: none;
+    }
+    
+    @media only screen and (max-width:1200px) {
+        .navbar-top {
+            display: none;
+        }
+        nav-resp {
+            display: block;
+        }
+        .sidenav {
+            display: block;
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(90, 90, 192);
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        .logo-top-resp {
+            width: 121px;
+            border-radius: 50%;
+            border: 2px double black;
+            margin-top: -28px;
+        }
+        .large-nav-resp {
+            display: block;
+            font-weight: bold;
+            color: white;
+            font-size: 36px;
+            text-align: left;
+            padding-left: 18px;
+        }
+        .small-nav-resp {
+            display: block;
+            font-weight: lighter;
+            color: white;
+            font-size: 20px;
+            text-align: left;
+            margin-top: -11px;
+            padding-bottom: 10px;
+            padding-left: 18px;
+        }
+        .large-nav-resp:hover {
+            color: white;
+            text-decoration: none;
+        }
+        .small-nav-resp:hover {
+            color: white;
+            text-decoration: none;
+        }
+        .list-item-top-resp {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+            text-align: left;
+            font-weight: bold;
+        }
+        .list-item-top-resp:hover {
+            color: lightblue;
+            text-decoration: none;
+        }
+        .sub-list-top-resp {
+            border-left: 6px solid darkblue;
+            margin-left: 32px;
+        }
+        .sub-list-top-resp a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+            text-align: left;
+            font-weight: bold;
+        }
+        .sub-list-top-resp a:hover {
+            color: lightblue;
+            text-decoration: none;
+        }
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+            color: white;
+            font-weight: bold;
+        }
+        .closebtn:hover {
+            color: lightblue;
+            text-decoration: none;
+        }
+        .sidenav:hover {
+            color: lightblue;
+            text-decoration: none;
+        }
+        .hindi-resp {
+            display: inline;
+            font-size: 24px;
+            font-weight: bold;
+            padding-left: 36px;
+        }
+        .top-nav-img-resp {
+            display: inline;
+        }
+        .eng-resp {
+            display: inline-block;
+            font-size: 21px;
+            font-weight: bold;
+            padding-bottom: 9px;
+        }
     }
