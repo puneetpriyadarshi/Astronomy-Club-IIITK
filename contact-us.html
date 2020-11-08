@@ -30,78 +30,10 @@
             background-size: cover;
         }
         
-        .email {
-            font-size: 25px;
-            padding-top: 50px;
-        }
-        
-        .facebook {
-            font-size: 25px;
-        }
-        
         a:hover {
             text-decoration: none;
             color: violet;
             text-shadow: violet;
-        }
-        
-        .gmail-logo {
-            width: 2.5%;
-            height: 5%;
-            margin-right: 20px;
-            border-radius: 10px;
-        }
-        
-        .fb-logo {
-            width: 2.5%;
-            height: 5%;
-            margin-right: 20px;
-            border-radius: 10px;
-        }
-        
-        .insta-logo {
-            width: 2.5%;
-            height: 5%;
-            margin-right: 20px;
-            margin-top: 5px;
-            border-radius: 10px;
-        }
-        
-        .instagram {
-            font-size: 25px;
-        }
-        
-        .youtube-logo {
-            width: 2.5%;
-            height: 5%;
-            margin-right: 20px;
-            margin-top: 5px;
-            border-radius: 10px;
-        }
-        
-        .youtube {
-            font-size: 25px;
-        }
-        
-        .iiitk-logo {
-            float: left;
-            margin-right: 100px;
-            margin-top: 10px;
-        }
-        
-        .align-left {
-            position: relative;
-            left: 50px;
-        }
-        
-        .map {
-            float: right;
-            height: 85%;
-            width: 50%;
-            margin: 15px;
-            position: relative;
-            left: -50px;
-            border-radius: 10px;
         }
         
         .card-container {
@@ -198,11 +130,11 @@
             .card-container {
                 display: none;
             }
-            .creators {
+            /* .creators {
                 font-size: 48px;
                 margin-top: 1px;
-                font-weight: initial;
-            }
+                font-weight: bold;
+            } */
             .card-container-1 {
                 margin-top: -36px;
             }
@@ -238,6 +170,44 @@
         @media only screen and (min-width: 841px) {
             .card-container-1 {
                 display: none;
+            }
+        }
+        
+        @media only screen and (max-width:620px) {
+            .creators {
+                font-size: 30px
+            }
+            .flip-card {
+                width: 320px;
+                height: 400px;
+            }
+            .flip-card-inner {
+                width: 320px;
+                height: 400px;
+            }
+            .flip-card-front,
+            .flip-card-back {
+                width: 320px;
+                height: 400px;
+            }
+        }
+        
+        @media only screen and (max-width:360px) {
+            .creators {
+                font-size: 23px
+            }
+            .flip-card {
+                width: 240px;
+                height: 320px;
+            }
+            .flip-card-inner {
+                width: 240px;
+                height: 320px;
+            }
+            .flip-card-front,
+            .flip-card-back {
+                width: 240px;
+                height: 320px;
             }
         }
     </style>
@@ -301,7 +271,7 @@
             </div>
 
 
-            <span style="padding-left:95%;padding-top: 10px; font-size:30px;cursor:pointer;color:white;display: block;background-color: rgb(90, 90, 192);" onclick="openNav()">&#9776;</span>
+            <span class="span-burger-resp-click" onclick="openNav()">&#9776;</span>
 
             <script>
                 function openNav() {
@@ -565,8 +535,8 @@
         <div class="update-foot">
             <p>Updates</p>
             <ul>
-                <li><a href="pdf/event 1.pdf" target="_blank"><i class="far fa-hand-point-right"></i> BHASKARA AND LEELAVATI</a></li>
-                <li><a href="pdf/event2.pdf" target="_blank"><i class="far fa-hand-point-right"></i> The First Online painting exhibition by Renowned Madhubani artist Mrs. Shalinee Kumari</a></li>
+                <li><a href="pdf/Bhaskara & Leelavati poster.pdf" target="_blank"><i class="far fa-hand-point-right"></i> BHASKARA AND LEELAVATI</a></li>
+                <li><a href="pdf/Bhaskara & Leelavati poster.pdf" target="_blank"><i class="far fa-hand-point-right"></i> The First Online painting exhibition by Renowned Madhubani artist Mrs. Shalinee Kumari</a></li>
                 <!-- <li><a href="#"><i class="far fa-hand-point-right"></i> Update 3</a></li>
                 <li><a href="#"><i class="far fa-hand-point-right"></i> Update 4</a></li>
                 <li><a href="#"><i class="far fa-hand-point-right"></i> Update 5</a></li> -->
