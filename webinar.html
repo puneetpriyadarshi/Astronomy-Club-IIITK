@@ -23,102 +23,85 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style type="text/css">
-      body{
-        margin: 0px;
-        padding:0px;
-        background-image: url("images/webinar-body.jpg");
-    }
-    .email{
-        font-size: 25px;
-        padding-top: 50px;
-    }
-    .facebook{
-        font-size: 25px;
-    }
-    a:hover{
-        text-decoration: none;
-        color:violet;
-        text-shadow: violet;
-    }
-    .gmail-logo{
-        width:2.5%;
-        height:5%;
-        margin-right: 20px;
-        border-radius: 10px;
-    }
-    .fb-logo{
-        width:2.5%;
-        height:5%;
-        margin-right: 20px;
-        border-radius: 10px;
-    }
-    .insta-logo{
-        width:2.5%;
-        height:5%;
-        margin-right: 20px;
-        margin-top: 5px;
-        border-radius: 10px;
-    }
-    .instagram{
-        font-size: 25px;
-    }
-    .youtube-logo{
-        width:2.5%;
-        height:5%;
-        margin-right: 20px;
-        margin-top: 5px;
-        border-radius: 10px;
-    }
-    .youtube{
-        font-size: 25px;
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-image: url("images/webinar-body.jpg");
+            background-size: cover;
+        }
         
-    }
-    .iiitk-logo{
-        float: left;
-        margin-right: 100px;
-        margin-top: 10px;
-    }
-    .align-left{
-       position: relative;
-       left:50px;
-    }
-    .map{
-        float: right;
-        height: 85%;
-        width: 50%;
-        margin: 15px;
-        position: relative;
-        left: -50px;
-        border-radius: 10px;
-    }
-    .webinar{
-        width:auto;
-        height: 400px;
-        background-image: url("images/webinar.jpg");
-        margin: auto;
-        text-align: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        color: azure;
-        border-radius: 50px;
-    }
-    .heading-webinar{
-        padding-top: 20px;
-        font-family: "Lucida Console", Courier, monospace;
-        font-size: 50px;
-    }
-    .heading-sub-webinar{
-        padding-top: 10px;
-        font-size: 30px;
-    }
-        </style>
+        .webinar {
+            width: auto;
+            height: auto;
+            background-image: url("images/webinar.jpg");
+            margin: auto;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: azure;
+            border-radius: 50px;
+            padding-bottom: 10px;
+        }
+        
+        .heading-webinar {
+            padding-top: 20px;
+            font-family: "Lucida Console", Courier, monospace;
+            font-size: 50px;
+        }
+        
+        .heading-sub-webinar {
+            font-weight: bold;
+            padding-top: 10px;
+            font-size: 30px;
+        }
+        
+        a:hover {
+            text-decoration: none;
+            color: violet;
+            text-shadow: violet;
+        }
+        
+        @media only screen and (max-width:900px) {
+            .heading-sub-webinar {
+                font-size: 21px;
+                margin-top: -10px;
+            }
+            .heading-webinar {
+                padding-top: 4px;
+                font-size: 45px;
+            }
+            .webinar {
+                padding-bottom: 25px;
+                padding-top: 20px;
+                margin-bottom: 53px;
+            }
+        }
+        
+        @media only screen and (max-width:580px) {
+            .heading-sub-webinar {
+                font-size: 16px;
+            }
+            .heading-webinar {
+                font-size: 36px;
+            }
+        }
+        
+        @media only screen and (max-width:600px) {
+            .webinar {
+                margin-bottom: 81px;
+            }
+            main {
+                margin-top: 140px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
 
 
-     <nav class="navbar-top">
+    <nav class="navbar-top">
 
         <div class="logo-top">
             <img src="images/logo.jpg" alt="logo">
@@ -150,57 +133,67 @@
 
         </ul>
 
+        <nav-resp>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a class="list-item-top-resp"><img class="logo-top-resp" src="images/logo.jpg" alt="logo"></a>
+                <a class="large-nav-resp">खगोलन्वेषण</a>
+                <a class="small-nav-resp">Astronomy Club of IIITDM Kurnool</a>
+                <a class="list-item-top-resp" href="index.html">HOME</a>
+                <a class="list-item-top-resp" href="#">ACTIVITIES</a>
+                <div class="sub-list-top-resp">
+                    <a href="webinar.html">WEBINAR</a>
+                    <a href="openday.html">OPEN DAY</a>
+                </div>
+                <a class="list-item-top-resp" href="#">STUDENT BLOGS</a>
+                <div class="sub-list-top-resp">
+                    <a href="presentation.html">PRESENTATION</a>
+                </div>
+                <a class="list-item-top-resp" href="members.html">MEMBERS</a>
+                <a class="list-item-top-resp" href="gallery.html">GALLERY</a>
+                <a class="list-item-top-resp" href="contact-us.html">CONTACT US</a>
+            </div>
+
+
+            <span class="span-burger-resp-click" onclick="openNav()">&#9776;</span>
+
+            <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "70%";
+                }
+
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+            </script>
+
+        </nav-resp>
+
     </nav>
 
-    <nav-resp>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a class="list-item-top-resp"><img class="logo-top-resp" src="images/logo.jpg" alt="logo"></a>
-            <a class="large-nav-resp">खगोलन्वेषण</a>
-            <a class="small-nav-resp">Astronomy Club of IIITDM Kurnool</a>
-            <a class="list-item-top-resp" href="index.html">HOME</a>
-            <a class="list-item-top-resp" href="#">ACTIVITIES</a>
-            <div class="sub-list-top-resp">
-                <a href="webinar.html">WEBINAR</a>
-                <a href="openday.html">OPEN DAY</a>
-            </div>
-            <a class="list-item-top-resp" href="#">STUDENT BLOGS</a>
-            <div class="sub-list-top-resp">
-                <a href="presentation.html">PRESENTATION</a>
-            </div>
-            <a class="list-item-top-resp" href="members.html">MEMBERS</a>
-            <a class="list-item-top-resp" href="gallery.html">GALLERY</a>
-            <a class="list-item-top-resp" href="contact-us.html">CONTACT US</a>
-        </div>
 
 
-        <span style="padding-left: 10px;font-size:30px;cursor:pointer;color:white;display: block;background-color: rgb(90, 90, 192);" onclick="openNav()">&#9776;<div class="hindi-resp">खगोलन्वेषण</div> <div class="top-nav-img-resp"><img style="width: 36px;border-radius: 50%;margin-bottom: 2px;" src="images/logo.jpg" alt="logo"></div> <div class="eng-resp">Astronomy Club of IIITDM</div></span>
-
-        <script>
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "70%";
-            }
-
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-            }
-        </script>
-
-    </nav-resp>
-    
-    
     <main>
-      <div class="webinar">
-        <p class="heading-webinar"><b><u>WEBINARS</u></b></p></a>
-        <a href="webinar 1.html" target="blank"><p class="heading-sub-webinar"><b>NOBEL PRIZE 2020 IN PHYSICS</b></p></a>
-        <a href="webinar 2.html" target="blank"><p class="heading-sub-webinar"><b>SPACE SCIENCE TECHNOLOGY AND ITS APPLICATIONS</b></p></a>
-        <a href="webinar 3.html" target="blank"><p class="heading-sub-webinar"><b>LITHIUM IN STARS</b></p></a>
-        <a href="webinar 4.html" target="blank"><p class="heading-sub-webinar"><b>THE NATURE OF DISCOVERY IN PHYSICS</b></p></a>
-</div>
+        <div class="webinar">
+            <p class="heading-webinar"><b><u>WEBINARS</u></b></p>
+            </a>
+            <a href="webinar 1.html" target="blank">
+                <p class="heading-sub-webinar">NOBEL PRIZE 2020 IN PHYSICS</p>
+            </a>
+            <a href="webinar 2.html" target="blank">
+                <p class="heading-sub-webinar">SPACE SCIENCE TECHNOLOGY AND ITS APPLICATIONS</p>
+            </a>
+            <a href="webinar 3.html" target="blank">
+                <p class="heading-sub-webinar">LITHIUM IN STARS</p>
+            </a>
+            <a href="webinar 4.html" target="blank">
+                <p class="heading-sub-webinar">THE NATURE OF DISCOVERY IN PHYSICS</p>
+            </a>
+        </div>
     </main>
 
 
-   <footer>
+    <footer>
 
         <div class="logo-foot">
             <img src="images/logo.jpg" alt="">
@@ -225,8 +218,8 @@
         <div class="update-foot">
             <p>Updates</p>
             <ul>
-                <li><a href="pdf/event 1.pdf" target="_blank"><i class="far fa-hand-point-right"></i> BHASKARA AND LEELAVATI</a></li>
-                <li><a href="pdf/event2.pdf" target="_blank"><i class="far fa-hand-point-right"></i> The First Online painting exhibition by Renowned Madhubani artist Mrs. Shalinee Kumari</a></li>
+                <li><a href="pdf/Bhaskara & Leelavati poster.pdf" target="_blank"><i class="far fa-hand-point-right"></i> BHASKARA AND LEELAVATI</a></li>
+                <li><a href="pdf/Bhaskara & Leelavati poster.pdf" target="_blank"><i class="far fa-hand-point-right"></i> The First Online painting exhibition by Renowned Madhubani artist Mrs. Shalinee Kumari</a></li>
                 <!-- <li><a href="#"><i class="far fa-hand-point-right"></i> Update 3</a></li>
                 <li><a href="#"><i class="far fa-hand-point-right"></i> Update 4</a></li>
                 <li><a href="#"><i class="far fa-hand-point-right"></i> Update 5</a></li> -->
