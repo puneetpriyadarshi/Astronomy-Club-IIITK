@@ -150,7 +150,7 @@
         }
         
         .gallery-head {
-            width: 30%;
+            width: 100%;
             height: 50px;
             color: orange;
             text-align: center;
@@ -175,22 +175,68 @@
             color: purple;
         }
         
-        @media only screen and (max-width:1100px) {
+        @media only screen and (max-width:940px) {
             .image {
                 width: 600px;
                 height: 450px;
+                margin-top: -30px;
+            }
+            .head {
+                font-size: 45px;
             }
             .numbertext {
-                padding-left: 12%;
-            }
-            .slideshow-container {
-                margin-top: 50px;
+                margin-top: -60px;
             }
         }
         
-        @media only screen and (max-width:920px) {
+        @media only screen and (max-width:730px) {
+            .image {
+                width: 450px;
+                height: 360px;
+                margin-top: -48px;
+            }
+            .head {
+                font-size: 40px;
+            }
+            .drive {
+                font-size: 16px;
+            }
             .numbertext {
-                padding-left: 3%;
+                margin-top: -80px;
+            }
+        }
+        
+        @media only screen and (max-width:560px) {
+            .image {
+                width: 360px;
+                height: 240px;
+                margin-top: -72px;
+            }
+            .head {
+                font-size: 35px;
+            }
+            .drive {
+                font-size: 12px;
+            }
+            .numbertext {
+                margin-top: -100px;
+            }
+        }
+        
+        @media only screen and (max-width:420px) {
+            main {
+                margin-top: 130px;
+            }
+            .image {
+                width: 270px;
+                height: 240px;
+                margin-top: -90px;
+            }
+            .head {
+                font-size: 27px;
+            }
+            .numbertext {
+                margin-top: -120px;
             }
         }
     </style>
@@ -254,7 +300,7 @@
             </div>
 
 
-            <span style="padding-left:95%;padding-top: 10px; font-size:30px;cursor:pointer;color:white;display: block;background-color: rgb(90, 90, 192);" onclick="openNav()">&#9776;</span>
+            <span class="span-burger-resp-click" onclick="openNav()">&#9776;</span>
 
             <script>
                 function openNav() {
@@ -269,8 +315,6 @@
         </nav-resp>
 
     </nav>
-
-
 
 
 
@@ -406,8 +450,8 @@
         <div class="update-foot">
             <p>Updates</p>
             <ul>
-                <li><a href="pdf/event 1.pdf" target="_blank"><i class="far fa-hand-point-right"></i> BHASKARA AND LEELAVATI</a></li>
-                <li><a href="pdf/event2.pdf" target="_blank"><i class="far fa-hand-point-right"></i> The First Online painting exhibition by Renowned Madhubani artist Mrs. Shalinee Kumari</a></li>
+                <li><a href="pdf/Bhaskara & Leelavati poster.pdf" target="_blank"><i class="far fa-hand-point-right"></i> BHASKARA AND LEELAVATI</a></li>
+                <li><a href="pdf/Bhaskara & Leelavati poster.pdf" target="_blank"><i class="far fa-hand-point-right"></i> The First Online painting exhibition by Renowned Madhubani artist Mrs. Shalinee Kumari</a></li>
                 <!-- <li><a href="#"><i class="far fa-hand-point-right"></i> Update 3</a></li>
                 <li><a href="#"><i class="far fa-hand-point-right"></i> Update 4</a></li>
                 <li><a href="#"><i class="far fa-hand-point-right"></i> Update 5</a></li> -->
