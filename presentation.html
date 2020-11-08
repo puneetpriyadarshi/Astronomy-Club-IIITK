@@ -86,6 +86,143 @@
             text-decoration: none;
             color: #E97FE9;
         }
+        
+        @media only screen and (max-width:1480px) {
+            main {
+                margin-left: 10%;
+            }
+            .heading-main {
+                margin-left: -10%;
+            }
+        }
+        
+        @media only screen and (max-width:1320px) {
+            main {
+                margin-left: 6%;
+            }
+            .heading-main {
+                margin-left: -6%;
+            }
+        }
+        
+        @media only screen and (max-width:1180px) {
+            main {
+                margin-left: 2%;
+            }
+            .heading-main {
+                margin-left: -2%;
+            }
+        }
+        
+        @media only screen and (max-width:1140px) {
+            main {
+                margin-left: 14%;
+            }
+            .heading-main {
+                margin-left: -14%;
+            }
+        }
+        
+        @media only screen and (max-width:960px) {
+            main {
+                margin-left: 9%;
+            }
+            .heading-main {
+                margin-left: -9%;
+            }
+        }
+        
+        @media only screen and (max-width:830px) {
+            main {
+                margin-left: 4%;
+            }
+            .heading-main {
+                margin-left: -4%;
+            }
+        }
+        
+        @media only screen and (max-width:780px) {
+            main {
+                margin-left: 0%;
+            }
+        }
+        
+        @media only screen and (max-width:740px) {
+            main {
+                margin-left: 21%;
+            }
+            .heading-main {
+                margin-left: -21%;
+            }
+        }
+        
+        @media only screen and (max-width:560px) {
+            main {
+                margin-left: 13%;
+            }
+            .heading-main {
+                margin-left: -13%;
+            }
+        }
+        
+        @media only screen and (max-width:512px) {
+            main {
+                margin-left: 0%;
+            }
+            .heading-main {
+                font-size: 33px;
+                margin-left: 0%;
+            }
+            /* .topics-main {
+                margin: 0;
+            } */
+        }
+        
+        @media only screen and (max-width:360px) {
+            .heading-main {
+                font-size: 27px;
+            }
+            .topics-main {
+                width: 200px;
+                height: 250px;
+            }
+            .topics-main img {
+                height: 200px;
+            }
+            .topics-main a {
+                font-size: 18px;
+            }
+            .name-main {
+                font-size: 9px;
+            }
+        }
+        
+        @media only screen and (max-width:360px) {
+            main {
+                margin-left: 11%;
+            }
+            .heading-main {
+                margin-left: -11%;
+            }
+        }
+        
+        @media only screen and (max-width:320px) {
+            main {
+                margin-left: 7%;
+            }
+            .heading-main {
+                margin-left: -7%;
+            }
+        }
+        
+        @media only screen and (max-width:300px) {
+            main {
+                margin-left: 3%;
+            }
+            .heading-main {
+                margin-left: -3%;
+            }
+        }
     </style>
 </head>
 
@@ -93,7 +230,7 @@
 
 
 
-     <nav class="navbar-top">
+    <nav class="navbar-top">
 
         <div class="logo-top">
             <img src="images/logo.jpg" alt="logo">
@@ -125,43 +262,43 @@
 
         </ul>
 
+        <nav-resp>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a class="list-item-top-resp"><img class="logo-top-resp" src="images/logo.jpg" alt="logo"></a>
+                <a class="large-nav-resp">खगोलन्वेषण</a>
+                <a class="small-nav-resp">Astronomy Club of IIITDM Kurnool</a>
+                <a class="list-item-top-resp" href="index.html">HOME</a>
+                <a class="list-item-top-resp" href="#">ACTIVITIES</a>
+                <div class="sub-list-top-resp">
+                    <a href="webinar.html">WEBINAR</a>
+                    <a href="openday.html">OPEN DAY</a>
+                </div>
+                <a class="list-item-top-resp" href="#">STUDENT BLOGS</a>
+                <div class="sub-list-top-resp">
+                    <a href="presentation.html">PRESENTATION</a>
+                </div>
+                <a class="list-item-top-resp" href="members.html">MEMBERS</a>
+                <a class="list-item-top-resp" href="gallery.html">GALLERY</a>
+                <a class="list-item-top-resp" href="contact-us.html">CONTACT US</a>
+            </div>
+
+
+            <span class="span-burger-resp-click" onclick="openNav()">&#9776;</span>
+
+            <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "70%";
+                }
+
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+            </script>
+
+        </nav-resp>
+
     </nav>
-
-    <nav-resp>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a class="list-item-top-resp"><img class="logo-top-resp" src="images/logo.jpg" alt="logo"></a>
-            <a class="large-nav-resp">खगोलन्वेषण</a>
-            <a class="small-nav-resp">Astronomy Club of IIITDM Kurnool</a>
-            <a class="list-item-top-resp" href="index.html">HOME</a>
-            <a class="list-item-top-resp" href="#">ACTIVITIES</a>
-            <div class="sub-list-top-resp">
-                <a href="webinar.html">WEBINAR</a>
-                <a href="openday.html">OPEN DAY</a>
-            </div>
-            <a class="list-item-top-resp" href="#">STUDENT BLOGS</a>
-            <div class="sub-list-top-resp">
-                <a href="presentation.html">PRESENTATION</a>
-            </div>
-            <a class="list-item-top-resp" href="members.html">MEMBERS</a>
-            <a class="list-item-top-resp" href="gallery.html">GALLERY</a>
-            <a class="list-item-top-resp" href="contact-us.html">CONTACT US</a>
-        </div>
-
-
-        <span style="padding-left: 10px;font-size:30px;cursor:pointer;color:white;display: block;background-color: rgb(90, 90, 192);" onclick="openNav()">&#9776;<div class="hindi-resp">खगोलन्वेषण</div> <div class="top-nav-img-resp"><img style="width: 36px;border-radius: 50%;margin-bottom: 2px;" src="images/logo.jpg" alt="logo"></div> <div class="eng-resp">Astronomy Club of IIITDM</div></span>
-
-        <script>
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "70%";
-            }
-
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-            }
-        </script>
-
-    </nav-resp>
 
 
 
@@ -263,8 +400,8 @@
         <div class="update-foot">
             <p>Updates</p>
             <ul>
-                <li><a href="pdf/event 1.pdf" target="_blank"><i class="far fa-hand-point-right"></i> BHASKARA AND LEELAVATI</a></li>
-                <li><a href="pdf/event2.pdf" target="_blank"><i class="far fa-hand-point-right"></i> The First Online painting exhibition by Renowned Madhubani artist Mrs. Shalinee Kumari</a></li>
+                <li><a href="pdf/Bhaskara & Leelavati poster.pdf.pdf" target="_blank"><i class="far fa-hand-point-right"></i> BHASKARA AND LEELAVATI</a></li>
+                <li><a href="pdf/Bhaskara & Leelavati poster.pdf.pdf" target="_blank"><i class="far fa-hand-point-right"></i> The First Online painting exhibition by Renowned Madhubani artist Mrs. Shalinee Kumari</a></li>
                 <!-- <li><a href="#"><i class="far fa-hand-point-right"></i> Update 3</a></li>
                 <li><a href="#"><i class="far fa-hand-point-right"></i> Update 4</a></li>
                 <li><a href="#"><i class="far fa-hand-point-right"></i> Update 5</a></li> -->
