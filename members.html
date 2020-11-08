@@ -23,128 +23,212 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style type="text/css">
-    body{
-        margin: 0px;
-        padding:0px;
-        background-image: url("images/members/members-back.jpg");
-    }
-    .email{
-        font-size: 25px;
-        padding-top: 50px;
-    }
-    .facebook{
-        font-size: 25px;
-    }
-    a:hover{
-        text-decoration: none;
-        color:violet;
-        text-shadow: violet;
-    }
-    .gmail-logo{
-        width:2.5%;
-        height:5%;
-        margin-right: 20px;
-        border-radius: 10px;
-    }
-    .fb-logo{
-        width:2.5%;
-        height:5%;
-        margin-right: 20px;
-        border-radius: 10px;
-    }
-    .insta-logo{
-        width:2.5%;
-        height:5%;
-        margin-right: 20px;
-        margin-top: 5px;
-        border-radius: 10px;
-    }
-    .instagram{
-        font-size: 25px;
-    }
-    .youtube-logo{
-        width:2.5%;
-        height:5%;
-        margin-right: 20px;
-        margin-top: 5px;
-        border-radius: 10px;
-    }
-    .youtube{
-        font-size: 25px;
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-image: url("images/members/members-back.jpg");
+        }
         
-    }
-    .iiitk-logo{
-        float: left;
-        margin-right: 100px;
-        margin-top: 10px;
-    }
-    .align-left{
-       position: relative;
-       left:50px;
-    }
-    .map{
-        float: right;
-        height: 85%;
-        width: 50%;
-        margin: 15px;
-        position: relative;
-        left: -50px;
-        border-radius: 10px;
-    }
-    .headd{
-        width: 40%;
-        height: 100px;
-        margin: auto;
-        margin-top: 20px;
-        margin-bottom: -10px;
-        text-align: center;
-        color: white;
-    }
-    .core{
-        font-size: 50px;
-        font-weight: bold;
-        font-style: italic;
-        font-family: monospace;
-        color: white;
-    }
-    .card{
-        margin: 20px;
-        border: 2px black solid;
-        border-radius: 10px;
-        text-align: center;
-    }
-    .card-container{
-  width: 100%;
-  height: auto;
-  margin: auto 0;
-  display: flex;
-  justify-content: center;
-    }
-    .card-container1{
-  width: 100%;
-  height: auto;
-  margin: auto 0;
-  display: flex;
-  justify-content: center;
-    }
-    .card-container2{
-  width: 100%;
-  height: auto;
-  margin: auto 0;
-  display: flex;
-  justify-content: center;
-    }
-    .non-core{
-        width: 30%;
-        height: 40px;
-        margin: auto;
-        position: relative;
-        top: -20px;
-        text-align: center;
-        color: white;
-        font-size: 20px;
-        font-weight: bold;
-    }
+        a:hover {
+            text-decoration: none;
+            color: violet;
+            text-shadow: violet;
+        }
+        
+        .headd {
+            width: 100%;
+            height: 100px;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: -10px;
+            text-align: center;
+            color: white;
+        }
+        
+        .core {
+            font-size: 50px;
+            font-weight: bold;
+            font-style: italic;
+            font-family: monospace;
+            color: white;
+        }
+        
+        .card {
+            margin: 20px;
+            border: 2px black solid;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .card-container {
+            width: 100%;
+            height: auto;
+            margin: auto 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .card-container1 {
+            width: 100%;
+            height: auto;
+            margin: auto 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .card-container2 {
+            width: 100%;
+            height: auto;
+            margin: auto 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .non-core {
+            width: 30%;
+            height: 40px;
+            margin: auto;
+            position: relative;
+            top: -20px;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        @media only screen and (max-width: 700px) {
+            .card-container {
+                display: none;
+            }
+            .card-container1 {
+                display: none;
+            }
+            .card-container2 {
+                display: none;
+            }
+            .card-container6 {
+                display: none;
+            }
+            .card-container7 {
+                display: none;
+            }
+            .card-container8 {
+                display: none;
+            }
+            .card-container9 {
+                display: none;
+            }
+            .card-container10 {
+                display: none;
+            }
+            .card-container11 {
+                display: none;
+            }
+            .card {
+                margin: auto;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                border: 2px black solid;
+                border-radius: 10px;
+                text-align: center;
+            }
+        }
+        
+        @media only screen and (max-width: 911px) {
+            .core {
+                font-size: 35px;
+            }
+        }
+        
+        @media only screen and (min-width: 700px) and (max-width: 1250px) {
+            .card-container {
+                display: none;
+            }
+            .card-container1 {
+                display: none;
+            }
+            .card-container2 {
+                display: none;
+            }
+            .between {
+                display: none;
+            }
+            .card-container6 {
+                width: 100%;
+                height: auto;
+                margin: auto 0;
+                display: flex;
+                justify-content: center;
+            }
+            .card-container7 {
+                width: 100%;
+                height: auto;
+                margin: auto 0;
+                display: flex;
+                justify-content: center;
+            }
+            .card-container8 {
+                width: 100%;
+                height: auto;
+                margin: auto 0;
+                display: flex;
+                justify-content: center;
+            }
+            .card-container9 {
+                width: 100%;
+                height: auto;
+                margin: auto 0;
+                display: flex;
+                justify-content: center;
+            }
+            .card-container10 {
+                width: 100%;
+                height: auto;
+                margin: auto 0;
+                display: flex;
+                justify-content: center;
+            }
+            .card-container11 {
+                width: 100%;
+                height: auto;
+                margin: auto 0;
+                display: flex;
+                justify-content: center;
+            }
+        }
+        
+        @media only screen and (min-width: 1251px) {
+            .between {
+                display: none;
+            }
+            .card-container3 {
+                display: none;
+            }
+            .card-container4 {
+                display: none;
+            }
+            .card-container5 {
+                display: none;
+            }
+            .card-container6 {
+                display: none;
+            }
+            .card-container7 {
+                display: none;
+            }
+            .card-container8 {
+                display: none;
+            }
+            .card-container9 {
+                display: none;
+            }
+            .card-container10 {
+                display: none;
+            }
+            .card-container11 {
+                display: none;
+            }
+        }
     </style>
 </head>
 
@@ -152,7 +236,7 @@
 
 
 
-  <nav class="navbar-top">
+    <nav class="navbar-top">
 
         <div class="logo-top">
             <img src="images/logo.jpg" alt="logo">
@@ -184,134 +268,314 @@
 
         </ul>
 
+        <nav-resp>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a class="list-item-top-resp"><img class="logo-top-resp" src="images/logo.jpg" alt="logo"></a>
+                <a class="large-nav-resp">खगोलन्वेषण</a>
+                <a class="small-nav-resp">Astronomy Club of IIITDM Kurnool</a>
+                <a class="list-item-top-resp" href="index.html">HOME</a>
+                <a class="list-item-top-resp" href="#">ACTIVITIES</a>
+                <div class="sub-list-top-resp">
+                    <a href="webinar.html">WEBINAR</a>
+                    <a href="openday.html">OPEN DAY</a>
+                </div>
+                <a class="list-item-top-resp" href="#">STUDENT BLOGS</a>
+                <div class="sub-list-top-resp">
+                    <a href="presentation.html">PRESENTATION</a>
+                </div>
+                <a class="list-item-top-resp" href="members.html">MEMBERS</a>
+                <a class="list-item-top-resp" href="gallery.html">GALLERY</a>
+                <a class="list-item-top-resp" href="contact-us.html">CONTACT US</a>
+            </div>
+
+
+            <span class="span-burger-resp-click" onclick="openNav()">&#9776;</span>
+
+            <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "70%";
+                }
+
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+            </script>
+
+        </nav-resp>
+
     </nav>
 
-    <nav-resp>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a class="list-item-top-resp"><img class="logo-top-resp" src="images/logo.jpg" alt="logo"></a>
-            <a class="large-nav-resp">खगोलन्वेषण</a>
-            <a class="small-nav-resp">Astronomy Club of IIITDM Kurnool</a>
-            <a class="list-item-top-resp" href="index.html">HOME</a>
-            <a class="list-item-top-resp" href="#">ACTIVITIES</a>
-            <div class="sub-list-top-resp">
-                <a href="webinar.html">WEBINAR</a>
-                <a href="openday.html">OPEN DAY</a>
-            </div>
-            <a class="list-item-top-resp" href="#">STUDENT BLOGS</a>
-            <div class="sub-list-top-resp">
-                <a href="presentation.html">PRESENTATION</a>
-            </div>
-            <a class="list-item-top-resp" href="members.html">MEMBERS</a>
-            <a class="list-item-top-resp" href="gallery.html">GALLERY</a>
-            <a class="list-item-top-resp" href="contact-us.html">CONTACT US</a>
-        </div>
 
-
-        <span style="padding-left: 10px;font-size:30px;cursor:pointer;color:white;display: block;background-color: rgb(90, 90, 192);" onclick="openNav()">&#9776;<div class="hindi-resp">खगोलन्वेषण</div> <div class="top-nav-img-resp"><img style="width: 36px;border-radius: 50%;margin-bottom: 2px;" src="images/logo.jpg" alt="logo"></div> <div class="eng-resp">Astronomy Club of IIITDM</div></span>
-
-        <script>
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "70%";
-            }
-
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-            }
-        </script>
-
-    </nav-resp>
-    
-    
 
     <main>
-      <div class="headd"><p class="core">WORKING TEAM</p></div>
-      <div class="card-container">
-        <div class="card" style="width: 18rem;">
-          <img src="images/members/IMG-20201030-WA0047.jpg" class="card-img-top" alt="..." height="">
-          <div class="card-body">
-            <p class="card-text"><b>NAME</b> : .  Suhas.S<br><b>ROLL NO</b>:118ME0001</p>
-          </div>
+        <div class="headd">
+            <p class="core">WORKING TEAM</p>
         </div>
-      
-        <div class="card" style="width: 18rem;">
-          <img src="images/members/20201031_095818.jpg" class="card-img-top" alt="..." height="81%">
-          <div class="card-body">
-            <p class="card-text"><b>NAME</b> : Hemanth Krishna Vineel<br><b>ROLL NO</b>:118CS0017</p>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="images/members/IMG-20201027-WA0012.jpg" class="card-img-top" alt="..." height="">
-          <div class="card-body">
-            <p class="card-text"><b>NAME</b> : Sireesh kodali<br><b>ROLL NO</b>:118CS0016</p>
-          </div>
-        </div>
-       
-        <div class="card" style="width: 18rem;">
-          <img src="images/members/IMG-20201030-WA0048.jpg" class="card-img-top" alt="..." height="83%">
-          <div class="card-body">
-            <p class="card-text"><b>NAME</b> :SURYA TEJA <br><b>ROLL NO</b>:117EC0031  </p>
-          </div>
-        </div>
-        
+        <div class="card-container">
+            <div class="card" style="width: 18rem;">
+                <img src="images/members/IMG-20201030-WA0047.jpg" class="card-img-top" alt="..." height="">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> : . Suhas.S<br><b>ROLL NO</b>:118ME0001</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="images/members/20201031_095818.jpg" class="card-img-top" alt="..." height="81%">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> : Hemanth Krishna Vineel<br><b>ROLL NO</b>:118CS0017</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/members/IMG-20201027-WA0012.jpg" class="card-img-top" alt="..." height="">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> : Sireesh kodali<br><b>ROLL NO</b>:118CS0016</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="images/members/IMG-20201030-WA0048.jpg" class="card-img-top" alt="..." height="83%">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> :SURYA TEJA <br><b>ROLL NO</b>:117EC0031 </p>
+                </div>
+            </div>
+
         </div>
         <div class="card-container1">
-          <div class="card" style="width: 18rem;">
-            <img src="images/members/IMG-20201031-WA0017.jpg" class="card-img-top" alt="..." height="82%">
-            <div class="card-body">
-              <p class="card-text"><b>NAME</b> :PRAVALLIKA SALADI <br><b>ROLL NO</b>:119EC0013 </p>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-              <img src="images/members/IMG-20201030-WA0064.jpg" class="card-img-top" alt="..." height="">
-              <div class="card-body">
-                <p class="card-text"><b>NAME</b> : DHAYAKIRAN REDDY<br><b>ROLL NO</b>:119ME0013 </p>
-              </div>
-            </div>
-            
             <div class="card" style="width: 18rem;">
-              <img src="images/members/IMG-20201030-WA0066.jpg" class="card-img-top" alt="..." height="83%">
-              <div class="card-body">
-                <p class="card-text"><b>NAME</b> :DEEPIKA LAHARI <br><b>ROLL NO</b>:119CS0001  </p>
-              </div>
+                <img src="images/members/IMG-20201031-WA0017.jpg" class="card-img-top" alt="..." height="82%">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> :PRAVALLIKA SALADI <br><b>ROLL NO</b>:119EC0013 </p>
+                </div>
             </div>
             <div class="card" style="width: 18rem;">
-              <img src="images/members/IMG-20201030-WA0069.jpg" class="card-img-top" alt="..." height="80%">
-              <div class="card-body">
-                <p class="card-text"><b>NAME</b> :CHAITRA GURJAR <br><b>ROLL NO</b>:119CS0006  </p>
-              </div>
+                <img src="images/members/IMG-20201030-WA0064.jpg" class="card-img-top" alt="..." height="">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> : DHAYAKIRAN REDDY<br><b>ROLL NO</b>:119ME0013 </p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="images/members/IMG-20201030-WA0066.jpg" class="card-img-top" alt="..." height="83%">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> :DEEPIKA LAHARI <br><b>ROLL NO</b>:119CS0001 </p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/members/IMG-20201030-WA0069.jpg" class="card-img-top" alt="..." height="80%">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> :CHAITRA GURJAR <br><b>ROLL NO</b>:119CS0006 </p>
+                </div>
             </div>
         </div>
         <div class="card-container2">
-          <div class="card" style="width: 18rem;">
-              <img src="images/members/IMG-20201030-WA0072.jpg" class="card-img-top" alt="..." height="">
-              <div class="card-body">
-                <p class="card-text"><b>NAME</b> :SOWMYA SREE <br><b>ROLL NO</b>:119CS0017  </p>
-              </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/members/IMG-20201030-WA0072.jpg" class="card-img-top" alt="..." height="">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> :SOWMYA SREE <br><b>ROLL NO</b>:119CS0017 </p>
+                </div>
             </div>
             <div class="card" style="width: 18rem;">
-              <img src="images/members/IMG-20201030-WA0075.jpg" class="card-img-top" alt="..." height="82%">
-              <div class="card-body">
-                <p class="card-text"><b>NAME</b> :HIMANSHU HARIRAM <br><b>ROLL NO</b>:119CS0041  </p>
-              </div>
+                <img src="images/members/IMG-20201030-WA0075.jpg" class="card-img-top" alt="..." height="82%">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> :HIMANSHU HARIRAM <br><b>ROLL NO</b>:119CS0041 </p>
+                </div>
             </div>
             <div class="card" style="width: 18rem;">
-              <img src="images/members/IMG-20201031-WA0021.jpg" class="card-img-top" alt="..." height="82%">
-              <div class="card-body">
-                <p class="card-text"><b>NAME</b> :APPALLA SOWBHAGYA <br><b>ROLL NO</b>:119EC0041 </p>
-              </div>
+                <img src="images/members/IMG-20201031-WA0021.jpg" class="card-img-top" alt="..." height="82%">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> :APPALLA SOWBHAGYA <br><b>ROLL NO</b>:119EC0041 </p>
+                </div>
             </div>
             <div class="card" style="width: 18rem;">
-              <img src="images/members/00100sPORTRAIT_00100_BURST20190927172009874_COVER.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text"><b>NAME</b> : OJAS JAIN<br><b>ROLL NO</b>:119ME0007</p>
-              </div>
+                <img src="images/members/00100sPORTRAIT_00100_BURST20190927172009874_COVER.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> : OJAS JAIN<br><b>ROLL NO</b>:119ME0007</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="between">
+            <div class="card" style="width: 18rem;">
+                <img src="images/members/IMG-20201030-WA0047.jpg" class="card-img-top" alt="..." height="">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> : . Suhas.S<br><b>ROLL NO</b>:118ME0001</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="images/members/20201031_095818.jpg" class="card-img-top" alt="..." height="81%">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> : Hemanth Krishna Vineel<br><b>ROLL NO</b>:118CS0017</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/members/IMG-20201027-WA0012.jpg" class="card-img-top" alt="..." height="">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> : Sireesh kodali<br><b>ROLL NO</b>:118CS0016</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="images/members/IMG-20201030-WA0048.jpg" class="card-img-top" alt="..." height="83%">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> :SURYA TEJA <br><b>ROLL NO</b>:117EC0031 </p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="images/members/IMG-20201031-WA0017.jpg" class="card-img-top" alt="..." height="82%">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> :PRAVALLIKA SALADI <br><b>ROLL NO</b>:119EC0013 </p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/members/IMG-20201030-WA0064.jpg" class="card-img-top" alt="..." height="">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> : DHAYAKIRAN REDDY<br><b>ROLL NO</b>:119ME0013 </p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="images/members/IMG-20201030-WA0066.jpg" class="card-img-top" alt="..." height="83%">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> :DEEPIKA LAHARI <br><b>ROLL NO</b>:119CS0001 </p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/members/IMG-20201030-WA0069.jpg" class="card-img-top" alt="..." height="80%">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> :CHAITRA GURJAR <br><b>ROLL NO</b>:119CS0006 </p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/members/IMG-20201030-WA0072.jpg" class="card-img-top" alt="..." height="">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> :SOWMYA SREE <br><b>ROLL NO</b>:119CS0017 </p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/members/IMG-20201030-WA0075.jpg" class="card-img-top" alt="..." height="82%">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> :HIMANSHU HARIRAM <br><b>ROLL NO</b>:119CS0041 </p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/members/IMG-20201031-WA0021.jpg" class="card-img-top" alt="..." height="82%">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> :APPALLA SOWBHAGYA <br><b>ROLL NO</b>:119EC0041 </p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/members/00100sPORTRAIT_00100_BURST20190927172009874_COVER.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> : OJAS JAIN<br><b>ROLL NO</b>:119ME0007</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="card-container6">
+            <div class="card" style="width: 18rem;">
+                <img src="images/members/IMG-20201030-WA0047.jpg" class="card-img-top" alt="..." height="">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> : . Suhas.S<br><b>ROLL NO</b>:118ME0001</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="images/members/20201031_095818.jpg" class="card-img-top" alt="..." height="81%">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> : Hemanth Krishna Vineel<br><b>ROLL NO</b>:118CS0017</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-container7">
+            <div class="card" style="width: 18rem;">
+                <img src="images/members/IMG-20201027-WA0012.jpg" class="card-img-top" alt="..." height="">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> : Sireesh kodali<br><b>ROLL NO</b>:118CS0016</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="images/members/IMG-20201030-WA0048.jpg" class="card-img-top" alt="..." height="83%">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> :SURYA TEJA <br><b>ROLL NO</b>:117EC0031 </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="card-container8">
+            <div class="card" style="width: 18rem;">
+                <img src="images/members/IMG-20201031-WA0017.jpg" class="card-img-top" alt="..." height="82%">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> :PRAVALLIKA SALADI <br><b>ROLL NO</b>:119EC0013 </p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/members/IMG-20201030-WA0064.jpg" class="card-img-top" alt="..." height="">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> : DHAYAKIRAN REDDY<br><b>ROLL NO</b>:119ME0013 </p>
+                </div>
+            </div>
+        </div>
+        <div class="card-container9">
+            <div class="card" style="width: 18rem;">
+                <img src="images/members/IMG-20201030-WA0066.jpg" class="card-img-top" alt="..." height="83%">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> :DEEPIKA LAHARI <br><b>ROLL NO</b>:119CS0001 </p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/members/IMG-20201030-WA0069.jpg" class="card-img-top" alt="..." height="80%">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> :CHAITRA GURJAR <br><b>ROLL NO</b>:119CS0006 </p>
+                </div>
+            </div>
+        </div>
+        <div class="card-container10">
+            <div class="card" style="width: 18rem;">
+                <img src="images/members/IMG-20201030-WA0072.jpg" class="card-img-top" alt="..." height="">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> :SOWMYA SREE <br><b>ROLL NO</b>:119CS0017 </p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/members/IMG-20201030-WA0075.jpg" class="card-img-top" alt="..." height="82%">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> :HIMANSHU HARIRAM <br><b>ROLL NO</b>:119CS0041 </p>
+                </div>
+            </div>
+        </div>
+        <div class="card-container11">
+            <div class="card" style="width: 18rem;">
+                <img src="images/members/IMG-20201031-WA0021.jpg" class="card-img-top" alt="..." height="82%">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> :APPALLA SOWBHAGYA <br><b>ROLL NO</b>:119EC0041 </p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/members/00100sPORTRAIT_00100_BURST20190927172009874_COVER.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text"><b>NAME</b> : OJAS JAIN<br><b>ROLL NO</b>:119ME0007</p>
+                </div>
             </div>
         </div>
     </main>
 
 
-   <footer>
+    <footer>
 
         <div class="logo-foot">
             <img src="images/logo.jpg" alt="">
@@ -336,8 +600,8 @@
         <div class="update-foot">
             <p>Updates</p>
             <ul>
-                <li><a href="pdf/event 1.pdf" target="_blank"><i class="far fa-hand-point-right"></i> BHASKARA AND LEELAVATI</a></li>
-                <li><a href="pdf/event2.pdf" target="_blank"><i class="far fa-hand-point-right"></i> The First Online painting exhibition by Renowned Madhubani artist Mrs. Shalinee Kumari</a></li>
+                <li><a href="pdf/Bhaskara & Leelavati poster.pdf" target="_blank"><i class="far fa-hand-point-right"></i> BHASKARA AND LEELAVATI</a></li>
+                <li><a href="pdf/Bhaskara & Leelavati poster.pdf" target="_blank"><i class="far fa-hand-point-right"></i> The First Online painting exhibition by Renowned Madhubani artist Mrs. Shalinee Kumari</a></li>
                 <!-- <li><a href="#"><i class="far fa-hand-point-right"></i> Update 3</a></li>
                 <li><a href="#"><i class="far fa-hand-point-right"></i> Update 4</a></li>
                 <li><a href="#"><i class="far fa-hand-point-right"></i> Update 5</a></li> -->
