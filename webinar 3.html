@@ -23,134 +23,104 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style type="text/css">
-      body{
-        margin: 0px;
-        padding:0px;
-        background-image: url("images/webinar-sub-body.jpg");
-    }
-    .email{
-        font-size: 25px;
-        padding-top: 50px;
-    }
-    .facebook{
-        font-size: 25px;
-    }
-    a:hover{
-        text-decoration: none;
-        color:violet;
-        text-shadow: violet;
-    }
-    .gmail-logo{
-        width:2.5%;
-        height:5%;
-        margin-right: 20px;
-        border-radius: 10px;
-    }
-    .fb-logo{
-        width:2.5%;
-        height:5%;
-        margin-right: 20px;
-        border-radius: 10px;
-    }
-    .insta-logo{
-        width:2.5%;
-        height:5%;
-        margin-right: 20px;
-        margin-top: 5px;
-        border-radius: 10px;
-    }
-    .instagram{
-        font-size: 25px;
-    }
-    .youtube-logo{
-        width:2.5%;
-        height:5%;
-        margin-right: 20px;
-        margin-top: 5px;
-        border-radius: 10px;
-    }
-    .youtube{
-        font-size: 25px;
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-image: url("images/webinar-sub-body.jpg");
+        }
         
-    }
-    .iiitk-logo{
-        float: left;
-        margin-right: 100px;
-        margin-top: 10px;
-    }
-    .align-left{
-       position: relative;
-       left:50px;
-    }
-    .map{
-        float: right;
-        height: 85%;
-        width: 50%;
-        margin: 15px;
-        position: relative;
-        left: -50px;
-        border-radius: 10px;
-    }
-    .arun{
-        border:5px orange solid;
-        border-radius: 20px;
-    }
-    .webinar-3{
-        width:80%;
-        height: 1150px;
-        background-image: url("images/acti-2.jpg");
-        margin: auto;
-        text-align: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        color: azure;
-        border-radius: 50px;
-    }
-    .webinar-3-head{
-        font-family: cursive;
-        font-size: 50px;
-        color: bisque;
-    }
-    .webinar-3-sub{
-        font-size: 30px;
-        color: darkorange;
-    }
-    .webinar-3-content{
-        font-size:20px;
-        padding: 10px;
-    }
-    .webinar-3{
-        width:80%;
-        height: 1150px;
-        background-image: url("images/acti-2.jpg");
-        margin: auto;
-        text-align: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        color: azure;
-        border-radius: 50px;
-    }
-    .webinar-3-head{
-        font-family: cursive;
-        font-size: 50px;
-        color: bisque;
-    }
-    .webinar-3-sub{
-        font-size: 30px;
-        color: darkorange;
-    }
-    .webinar-3-content{
-        font-size:20px;
-        padding: 10px;
-    }
-        </style>
+        a:hover {
+            text-decoration: none;
+            color: violet;
+            text-shadow: violet;
+        }
+        
+        .webinar-3 {
+            width: 80%;
+            height: auto;
+            background-image: url("images/acti-2.jpg");
+            margin: auto;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: azure;
+            border-radius: 50px;
+            padding-bottom: 14px;
+            padding-top: 20px;
+        }
+        
+        .webinar-3-head {
+            font-family: cursive;
+            font-size: 50px;
+            color: bisque;
+        }
+        
+        .webinar-3-sub {
+            font-size: 30px;
+            color: darkorange;
+        }
+        
+        .webinar-3-content {
+            font-size: 20px;
+            padding: 10px;
+            text-align: justify;
+        }
+        
+        .arun {
+            border: 5px orange solid;
+            border-radius: 20px;
+            width: 50%;
+        }
+        
+        @media only screen and (max-width:780px) {
+            .arun {
+                width: 75%;
+            }
+            .webinar-3 {
+                padding-top: 16px;
+            }
+            .webinar-3-head {
+                font-size: 40px;
+            }
+            .webinar-3-sub {
+                font-size: 22px;
+            }
+            .webinar-3-content {
+                font-size: 16px;
+            }
+            .drive-link {
+                font-size: 10px;
+            }
+        }
+        
+        @media only screen and (max-width:460px) {
+            .arun {
+                width: 75%;
+            }
+            .webinar-3-head {
+                font-size: 31px;
+            }
+            .webinar-3 {
+                padding-top: 10px;
+            }
+            .webinar-3-sub {
+                font-size: 17px;
+            }
+            .webinar-3-content {
+                font-size: 14px;
+            }
+            .drive-link {
+                font-size: 9px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
 
 
-     <nav class="navbar-top">
+    <nav class="navbar-top">
 
         <div class="logo-top">
             <img src="images/logo.jpg" alt="logo">
@@ -182,58 +152,61 @@
 
         </ul>
 
+        <nav-resp>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a class="list-item-top-resp"><img class="logo-top-resp" src="images/logo.jpg" alt="logo"></a>
+                <a class="large-nav-resp">खगोलन्वेषण</a>
+                <a class="small-nav-resp">Astronomy Club of IIITDM Kurnool</a>
+                <a class="list-item-top-resp" href="index.html">HOME</a>
+                <a class="list-item-top-resp" href="#">ACTIVITIES</a>
+                <div class="sub-list-top-resp">
+                    <a href="webinar.html">WEBINAR</a>
+                    <a href="openday.html">OPEN DAY</a>
+                </div>
+                <a class="list-item-top-resp" href="#">STUDENT BLOGS</a>
+                <div class="sub-list-top-resp">
+                    <a href="presentation.html">PRESENTATION</a>
+                </div>
+                <a class="list-item-top-resp" href="members.html">MEMBERS</a>
+                <a class="list-item-top-resp" href="gallery.html">GALLERY</a>
+                <a class="list-item-top-resp" href="contact-us.html">CONTACT US</a>
+            </div>
+
+
+            <span class="span-burger-resp-click" onclick="openNav()">&#9776;</span>
+
+            <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "70%";
+                }
+
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+            </script>
+
+        </nav-resp>
+
     </nav>
 
-    <nav-resp>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a class="list-item-top-resp"><img class="logo-top-resp" src="images/logo.jpg" alt="logo"></a>
-            <a class="large-nav-resp">खगोलन्वेषण</a>
-            <a class="small-nav-resp">Astronomy Club of IIITDM Kurnool</a>
-            <a class="list-item-top-resp" href="index.html">HOME</a>
-            <a class="list-item-top-resp" href="#">ACTIVITIES</a>
-            <div class="sub-list-top-resp">
-                <a href="webinar.html">WEBINAR</a>
-                <a href="openday.html">OPEN DAY</a>
-            </div>
-            <a class="list-item-top-resp" href="#">STUDENT BLOGS</a>
-            <div class="sub-list-top-resp">
-                <a href="presentation.html">PRESENTATION</a>
-            </div>
-            <a class="list-item-top-resp" href="members.html">MEMBERS</a>
-            <a class="list-item-top-resp" href="gallery.html">GALLERY</a>
-            <a class="list-item-top-resp" href="contact-us.html">CONTACT US</a>
-        </div>
 
-
-        <span style="padding-left: 10px;font-size:30px;cursor:pointer;color:white;display: block;background-color: rgb(90, 90, 192);" onclick="openNav()">&#9776;<div class="hindi-resp">खगोलन्वेषण</div> <div class="top-nav-img-resp"><img style="width: 36px;border-radius: 50%;margin-bottom: 2px;" src="images/logo.jpg" alt="logo"></div> <div class="eng-resp">Astronomy Club of IIITDM</div></span>
-
-        <script>
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "70%";
-            }
-
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-            }
-        </script>
-
-    </nav-resp>
-    
-    
 
     <main>
-        <div class="webinar-3"><p class="webinar-3-head">WEBINAR - 3</p>
+        <div class="webinar-3">
+            <p class="webinar-3-head">WEBINAR - 3</p>
             <p class="webinar-3-sub">:LITHIUM IN STARS BY DR. B ESWAR REDDY</p>
-            <p class="webinar-3-content">With the commencement of the academic year 2020-21, The Astronomy club of IIITDM Kurnool presented our first event by Prof. B Eswara Reddy of Indian Institute of Astrophysics, Bengaluru addressing a webinar on 'Lithium in Stars’ on 13 August 2020.
+            <p class="webinar-3-content">With the commencement of the academic year 2020-21, The Astronomy club of IIITDM Kurnool presented our first event by Prof. B Eswara Reddy of Indian Institute of Astrophysics, Bengaluru addressing a webinar on 'Lithium in Stars’ on 13 August
+                2020.
             </p>
-            <a href= "https://bit.ly/LiveStream1308" target="blank"><img src="images/eswar-reddy-min(1).png" class="arun" width="50%"></a>
-            <p><a href="https://bit.ly/LiveStream1308" target="blank">CLICK THE IMAGE FOR THE FULL VIDEO</a></p>
+            <a href="https://bit.ly/LiveStream1308" target="blank"><img src="images/eswar-reddy-min(1).png" class="arun" width="50%"></a>
+            <p><a class="drive-link" style="font-weight: bold;
+                padding-top: 10px;" href="https://bit.ly/LiveStream1308" target="blank">CLICK THE IMAGE FOR THE FULL VIDEO</a></p>
         </div>
     </main>
 
 
-   <footer>
+    <footer>
 
         <div class="logo-foot">
             <img src="images/logo.jpg" alt="">
@@ -258,12 +231,11 @@
         <div class="update-foot">
             <p>Updates</p>
             <ul>
-                <li><a href="pdf/event 1.pdf" target="_blank"><i class="far fa-hand-point-right"></i> BHASKARA AND LEELAVATI</a></li>
-                <li><a href="pdf/event2.pdf" target="_blank"><i class="far fa-hand-point-right"></i> The First Online painting exhibition by Renowned Madhubani artist Mrs. Shalinee Kumari</a></li>
+                <li><a href="pdf/Bhaskara & Leelavati poster.pdf" target="_blank"><i class="far fa-hand-point-right"></i> BHASKARA AND LEELAVATI</a></li>
+                <li><a href="pdf/Bhaskara & Leelavati poster.pdf" target="_blank"><i class="far fa-hand-point-right"></i> The First Online painting exhibition by Renowned Madhubani artist Mrs. Shalinee Kumari</a></li>
                 <!-- <li><a href="#"><i class="far fa-hand-point-right"></i> Update 3</a></li>
                 <li><a href="#"><i class="far fa-hand-point-right"></i> Update 4</a></li>
                 <li><a href="#"><i class="far fa-hand-point-right"></i> Update 5</a></li> -->
-
             </ul>
         </div>
 
