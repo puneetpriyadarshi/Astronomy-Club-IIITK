@@ -1,3 +1,3 @@
 # Astronomy-Club-IIITDMK
 OFFICIAL WEBSITE : 
-https://pratik-kumar-621.github.io/Astronomy-Club-IIITK/
+<a href="https://pratik-kumar-621.github.io/Astronomy-Club-IIITK/"> Website</a>
